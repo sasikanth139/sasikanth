@@ -1,0 +1,6 @@
+<%= form_for @book, url:{action: "create"} do |b| %>
+	<p> Name of the Book: <%=b.text_field :name %></p>
+	<p> Author of the Book: <%=b.text_field :author %></p>
+	<p> Price: <%=b.text_field :price %></p>
+	<p> <%= b.submit %></p>
+<%end%>

@@ -1,0 +1,11 @@
+<%= form_tag products_show_path do %>
+	<table>
+	<tr><td><pre><b>Product Name :</b></pre><%= text_field_tag 'name' %></td></tr><br />
+	<tr><td><pre><b>Category     :</b></pre><%= text_field_tag 'category' %></td></tr><br />
+	<tr><td><pre><b>Price        :</b></pre><%= text_field_tag 'price'%></td></tr><br />
+	<tr><td><%= submit_tag "Submit" %></td></tr>
+	</table>
+<% end %>
+
+
+

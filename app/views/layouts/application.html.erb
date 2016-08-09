@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sasikanth</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div align="center"><header><h1>My App Header</h1></header></div>
+
+<div align="center">
+<%= yield %>
+</div>
+
+<div align="center"><footer><h4>My App Footer</h4></footer></div>
+
+</body>
+</html>

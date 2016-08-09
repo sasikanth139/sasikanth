@@ -1,0 +1,16 @@
+<%= form_tag employee_show_path do %>
+	Name:<%= text_field_tag 'name'%><br>
+	Age: <%= text_field_tag 'age' %><br>
+	Gender:	Male<%= radio_button_tag 'gender', 'male' %> Female <%= radio_button_tag 'gender', 'female' %><br>
+	Department:<%= select_tag "department", "<option>Mathematics</option><option>Science</option><option>Social Studies</option><option>English</option>".html_safe %><br>
+	Teaching Experience in: <%= check_box_tag 'exp', 'Mathematics','Science','Social','English' %>
+	DOB: <%= date_field_tag 'dob' %><br>
+	
+	Phone Number: <%= telephone_field_tag "phone" %><br>
+	Email: <%=  email_field_tag 'email' %><br>
+	Address: <%= text_area_tag 'address'%><br>
+	Photo: <%= file_field_tag "photo" %><br>
+
+
+	<%= submit_tag 'Submit' %>
+<% end %>
